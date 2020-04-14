@@ -19,6 +19,7 @@
 		D0F78BB42445351D00213881 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB32445351D00213881 /* CardView.swift */; };
 		D0F78BB724455EC300213881 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB624455EC300213881 /* Extensions+UIView.swift */; };
 		D0F78BB924458D4B00213881 /* Extensions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB824458D4B00213881 /* Extensions+UIColor.swift */; };
+		D0F78BBE24459D1E00213881 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BBD24459D1E00213881 /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D0F78BB32445351D00213881 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D0F78BB624455EC300213881 /* Extensions+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		D0F78BB824458D4B00213881 /* Extensions+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIColor.swift"; sourceTree = "<group>"; };
+		D0F78BBD24459D1E00213881 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,14 +70,12 @@
 		D0F78B962444F6BF00213881 /* DoggieMatch */ = {
 			isa = PBXGroup;
 			children = (
-				D0F78BB524455EAF00213881 /* Extensions */,
-				D0F78BAB24450A8800213881 /* Home */,
-				D0F78B972444F6BF00213881 /* AppDelegate.swift */,
-				D0F78B992444F6BF00213881 /* SceneDelegate.swift */,
-				D0F78B9D2444F6BF00213881 /* Main.storyboard */,
-				D0F78BA02444F6C500213881 /* Assets.xcassets */,
-				D0F78BA22444F6C500213881 /* LaunchScreen.storyboard */,
 				D0F78BA52444F6C500213881 /* Info.plist */,
+				D0F78BAB24450A8800213881 /* Home */,
+				D0F78BBC24459CD100213881 /* Model */,
+				D0F78BBA244590DC00213881 /* Networking */,
+				D0F78BB524455EAF00213881 /* Extensions */,
+				D0F78BBB244591A500213881 /* Utilities */,
 			);
 			path = DoggieMatch;
 			sourceTree = "<group>";
@@ -107,6 +107,33 @@
 				D0F78BB824458D4B00213881 /* Extensions+UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0F78BBA244590DC00213881 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D0F78BBB244591A500213881 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0F78BA02444F6C500213881 /* Assets.xcassets */,
+				D0F78BA22444F6C500213881 /* LaunchScreen.storyboard */,
+				D0F78B972444F6BF00213881 /* AppDelegate.swift */,
+				D0F78B992444F6BF00213881 /* SceneDelegate.swift */,
+				D0F78B9D2444F6BF00213881 /* Main.storyboard */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D0F78BBC24459CD100213881 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0F78BBD24459D1E00213881 /* Animal.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +216,7 @@
 				D0F78B9A2444F6BF00213881 /* SceneDelegate.swift in Sources */,
 				D0F78BB724455EC300213881 /* Extensions+UIView.swift in Sources */,
 				D0F78BB024450CD200213881 /* TopNavigationStackView.swift in Sources */,
+				D0F78BBE24459D1E00213881 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
