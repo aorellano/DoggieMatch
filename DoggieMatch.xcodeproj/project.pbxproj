@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		D0F78B982444F6BF00213881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78B972444F6BF00213881 /* AppDelegate.swift */; };
 		D0F78B9A2444F6BF00213881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78B992444F6BF00213881 /* SceneDelegate.swift */; };
-		D0F78B9C2444F6BF00213881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78B9B2444F6BF00213881 /* ViewController.swift */; };
+		D0F78B9C2444F6BF00213881 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78B9B2444F6BF00213881 /* HomeController.swift */; };
 		D0F78B9F2444F6BF00213881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F78B9D2444F6BF00213881 /* Main.storyboard */; };
 		D0F78BA12444F6C500213881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F78BA02444F6C500213881 /* Assets.xcassets */; };
 		D0F78BA42444F6C500213881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F78BA22444F6C500213881 /* LaunchScreen.storyboard */; };
+		D0F78BAD24450BA000213881 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BAC24450BA000213881 /* HomeView.swift */; };
+		D0F78BB024450CD200213881 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BAF24450CD200213881 /* TopNavigationStackView.swift */; };
+		D0F78BB224451C3A00213881 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB124451C3A00213881 /* HomeBottomControlsStackView.swift */; };
+		D0F78BB42445351D00213881 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB32445351D00213881 /* CardView.swift */; };
+		D0F78BB724455EC300213881 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB624455EC300213881 /* Extensions+UIView.swift */; };
+		D0F78BB924458D4B00213881 /* Extensions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB824458D4B00213881 /* Extensions+UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0F78B942444F6BF00213881 /* DoggieMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggieMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F78B972444F6BF00213881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F78B992444F6BF00213881 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0F78B9B2444F6BF00213881 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0F78B9B2444F6BF00213881 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		D0F78B9E2444F6BF00213881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0F78BA02444F6C500213881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F78BA32444F6C500213881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0F78BA52444F6C500213881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F78BAC24450BA000213881 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D0F78BAF24450CD200213881 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		D0F78BB124451C3A00213881 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
+		D0F78BB32445351D00213881 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D0F78BB624455EC300213881 /* Extensions+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		D0F78BB824458D4B00213881 /* Extensions+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,45 @@
 		D0F78B962444F6BF00213881 /* DoggieMatch */ = {
 			isa = PBXGroup;
 			children = (
+				D0F78BB524455EAF00213881 /* Extensions */,
+				D0F78BAB24450A8800213881 /* Home */,
 				D0F78B972444F6BF00213881 /* AppDelegate.swift */,
 				D0F78B992444F6BF00213881 /* SceneDelegate.swift */,
-				D0F78B9B2444F6BF00213881 /* ViewController.swift */,
 				D0F78B9D2444F6BF00213881 /* Main.storyboard */,
 				D0F78BA02444F6C500213881 /* Assets.xcassets */,
 				D0F78BA22444F6C500213881 /* LaunchScreen.storyboard */,
 				D0F78BA52444F6C500213881 /* Info.plist */,
 			);
 			path = DoggieMatch;
+			sourceTree = "<group>";
+		};
+		D0F78BAB24450A8800213881 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D0F78B9B2444F6BF00213881 /* HomeController.swift */,
+				D0F78BAE24450CB300213881 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D0F78BAE24450CB300213881 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0F78BAC24450BA000213881 /* HomeView.swift */,
+				D0F78BAF24450CD200213881 /* TopNavigationStackView.swift */,
+				D0F78BB124451C3A00213881 /* HomeBottomControlsStackView.swift */,
+				D0F78BB32445351D00213881 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0F78BB524455EAF00213881 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0F78BB624455EC300213881 /* Extensions+UIView.swift */,
+				D0F78BB824458D4B00213881 /* Extensions+UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F78B9C2444F6BF00213881 /* ViewController.swift in Sources */,
+				D0F78BB42445351D00213881 /* CardView.swift in Sources */,
+				D0F78B9C2444F6BF00213881 /* HomeController.swift in Sources */,
+				D0F78BB224451C3A00213881 /* HomeBottomControlsStackView.swift in Sources */,
+				D0F78BB924458D4B00213881 /* Extensions+UIColor.swift in Sources */,
+				D0F78BAD24450BA000213881 /* HomeView.swift in Sources */,
 				D0F78B982444F6BF00213881 /* AppDelegate.swift in Sources */,
 				D0F78B9A2444F6BF00213881 /* SceneDelegate.swift in Sources */,
+				D0F78BB724455EC300213881 /* Extensions+UIView.swift in Sources */,
+				D0F78BB024450CD200213881 /* TopNavigationStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7297N2DPU;
 				INFOPLIST_FILE = DoggieMatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7297N2DPU;
 				INFOPLIST_FILE = DoggieMatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
