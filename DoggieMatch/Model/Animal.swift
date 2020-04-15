@@ -59,13 +59,6 @@ struct Enviroment {
     let cats: Bool
 }
 
-struct Photo {
-    let small: String
-    let medium: String
-    let large: String
-    let full: String
-}
-
 struct Video {
     let embed: String
 }
@@ -76,13 +69,6 @@ struct Contact {
     let address: Address
 }
 
-struct Address {
-    let address1: String
-    let address2: String
-    let city: String
-    let state: String
-    let postcode: String
-    let country: String
-}
+
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0970756244698B600FE39BD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0970755244698B600FE39BD /* Endpoint.swift */; };
 		D0F78B982444F6BF00213881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78B972444F6BF00213881 /* AppDelegate.swift */; };
 		D0F78B9A2444F6BF00213881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78B992444F6BF00213881 /* SceneDelegate.swift */; };
 		D0F78B9C2444F6BF00213881 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78B9B2444F6BF00213881 /* HomeController.swift */; };
@@ -20,9 +21,13 @@
 		D0F78BB724455EC300213881 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB624455EC300213881 /* Extensions+UIView.swift */; };
 		D0F78BB924458D4B00213881 /* Extensions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BB824458D4B00213881 /* Extensions+UIColor.swift */; };
 		D0F78BBE24459D1E00213881 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BBD24459D1E00213881 /* Animal.swift */; };
+		D0F78BC02445A69E00213881 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BBF2445A69E00213881 /* Organization.swift */; };
+		D0F78BC22445A74700213881 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BC12445A74700213881 /* Address.swift */; };
+		D0F78BC52445A88000213881 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F78BC42445A88000213881 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0970755244698B600FE39BD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D0F78B942444F6BF00213881 /* DoggieMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggieMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F78B972444F6BF00213881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F78B992444F6BF00213881 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,9 @@
 		D0F78BB624455EC300213881 /* Extensions+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 		D0F78BB824458D4B00213881 /* Extensions+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIColor.swift"; sourceTree = "<group>"; };
 		D0F78BBD24459D1E00213881 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		D0F78BBF2445A69E00213881 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		D0F78BC12445A74700213881 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		D0F78BC42445A88000213881 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 		D0F78BBA244590DC00213881 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D0970755244698B600FE39BD /* Endpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -132,6 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				D0F78BBD24459D1E00213881 /* Animal.swift */,
+				D0F78BBF2445A69E00213881 /* Organization.swift */,
+				D0F78BC12445A74700213881 /* Address.swift */,
+				D0F78BC42445A88000213881 /* Photo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,11 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0970756244698B600FE39BD /* Endpoint.swift in Sources */,
 				D0F78BB42445351D00213881 /* CardView.swift in Sources */,
 				D0F78B9C2444F6BF00213881 /* HomeController.swift in Sources */,
+				D0F78BC02445A69E00213881 /* Organization.swift in Sources */,
 				D0F78BB224451C3A00213881 /* HomeBottomControlsStackView.swift in Sources */,
 				D0F78BB924458D4B00213881 /* Extensions+UIColor.swift in Sources */,
 				D0F78BAD24450BA000213881 /* HomeView.swift in Sources */,
+				D0F78BC52445A88000213881 /* Photo.swift in Sources */,
+				D0F78BC22445A74700213881 /* Address.swift in Sources */,
 				D0F78B982444F6BF00213881 /* AppDelegate.swift in Sources */,
 				D0F78B9A2444F6BF00213881 /* SceneDelegate.swift in Sources */,
 				D0F78BB724455EC300213881 /* Extensions+UIView.swift in Sources */,
