@@ -16,15 +16,13 @@ protocol Endpoint {
 
 extension Endpoint {
     var apiKey: String {
-        return "jV9VjUqDrsQQI1Tc6x7fSdOAJThrSpTpmeAEkjFRvYq0OzRJfD"
+        return "bhaOWHD9"
     }
     
     var urlComponents: URLComponents {
         let baseUrl = base.appendingPathComponent(path)
         var components = URLComponents(url: baseUrl, resolvingAgainstBaseURL: true)!
-        components.queryItems = [
-            URLQueryItem(name: "api_key", value: apiKey)
-        ]
+        components.queryItems = queryItems
         return components
     }
     
@@ -39,20 +37,21 @@ enum Shelter {
 }
 
 extension Shelter: Endpoint {
-    var base: String {
-        return "https://api.petfinder.com/v2"
+    var base: URL {
+        return URL(string: "https://www.petrescue.com.au")!
     }
     
     var path: String {
         switch self {
-        case .searchAnimal: return "/animals"
+        case .searchAnimal: return "/listings"
         }
     }
-    
+
     var queryItems: [URLQueryItem] {
         switch self {
         case .searchAnimal(let breed):
             return [
+                URLQueryItem(name: "token", value: apiKey),
                 URLQueryItem(name: "breed", value: breed)
             ]
         }

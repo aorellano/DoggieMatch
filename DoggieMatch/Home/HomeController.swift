@@ -12,7 +12,9 @@ class HomeController: UIViewController {
     let homeView = HomeView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let endpoint = Shelter.searchAnimal(breed: "Maltese")
+        print(endpoint.request)
     }
     
     override func loadView() {
